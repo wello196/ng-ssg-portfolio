@@ -6,7 +6,7 @@ A high-performance, enterprise-grade personal developer portfolio built with **A
 
 ## 🌐 Live Demo & Interactive Links
 
-🚀 **[View Live Portfolio Demo](https://your-portfolio-live-url.com)**
+🚀 **[View Live Portfolio Demo](https://waleed-mehrez.vercel.app/projects)**
 
 ---
 
