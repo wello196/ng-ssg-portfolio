@@ -22,7 +22,8 @@ Thanks to Angular 22 SSG prerendering, client hydration, and optimized asset del
 | **Total Blocking Time (TBT)** | **0 ms** | 🟢 Zero Input Delay |
 | **Cumulative Layout Shift (CLS)** | **0.003** | 🟢 Zero Layout Shift |
 
-![PageSpeed Insights Audit Result](public/images/pagespeed-insights.jpg)
+![PageSpeed Insights Audit Result](https://github.com/user-attachments/assets/04dc8909-eba2-4878-930f-067a010a1686)
+
 
 ---
 
