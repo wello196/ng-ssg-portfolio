@@ -37,7 +37,66 @@
     
 
     <!-- Right: Project Showcase -->
-   
+   <div class="hero-showcase relative mx-auto w-full max-w-lg lg:ml-auto">
+  <div class="showcase-light" aria-hidden="true">
+    <div class="showcase-light-panel"></div>
+    <div class="showcase-light-beam"></div>
+  </div>
+      
+  <div class="relative z-10">
+    <p class="mt-[15px] ml-[28px] font-mono text-xs uppercase tracking-[0.2em] text-neon">
+      // SELECTED_PROJECTS_03
+    </p>
+  </div>
+
+  <!-- Layered Projects -->
+  <div class="project-stack relative w-full">
+
+    <!-- Primary LCP Image (Highest Fetch Priority) -->
+    <div class="project-layer project-one">
+      <img
+        src="/images/projects/incident-tracking.png"
+        alt="Incident Tracking System project preview"
+        fetchpriority="high"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+
+    <!-- Secondary Stack Image (Lazy Loaded) -->
+    <div class="project-layer project-two">
+      <img
+        src="/images/projects/projectCompetition.png"
+        alt="Project Competition platform preview"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+
+    <!-- Tertiary Stack Image (Lazy Loaded & Corrected Alt Text) -->
+    <div class="project-layer project-three">
+      <img
+        src="/images/projects/news-pwa.png"
+        alt="PWA News Reader application preview"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+
+    <!-- End Message -->
+    <div class="project-end-message">
+      <span>03 / 03</span>
+      <p>And there's more to explore.</p>
+      <span class="project-message-line" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <!-- Small Message -->
+  <p class="mt-7 font-mono text-xs leading-6 text-dim">
+    <span class="text-neon" aria-hidden="true">→</span>
+    A glimpse into my work and experiments.
+  </p>
+</div>
   </div>
 
   <!-- Bottom Information -->
