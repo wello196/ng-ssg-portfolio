@@ -1,0 +1,498 @@
+
+/* =========================================
+   TECH MARQUEE
+========================================= */
+
+.tech-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.tech-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: tech-marquee 40s linear infinite;
+}
+
+.tech-marquee-group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 4rem;
+  padding-right: 4rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.75rem;
+
+  color: #C7FF2E;
+  font-family: "Space Mono", monospace;
+  font-size: 0.875rem;
+  white-space: nowrap;
+
+  transition: color 250ms ease;
+}
+
+.tech-item img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+  opacity: 0.75;
+  transition: opacity 250ms ease, filter 250ms ease;
+}
+
+.tech-item:hover img {
+  opacity: 1;
+  filter: brightness(0) saturate(100%)
+    invert(91%) sepia(83%) saturate(1000%)
+    hue-rotate(24deg) brightness(105%);
+}
+
+.tech-marquee-wrapper:hover .tech-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes tech-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* =========================================
+   CSS ICON
+========================================= */
+
+.css-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 21px;
+  height: 21px;
+
+  border: 1px solid #F4F2EA;
+  border-radius: 4px;
+
+  color: #F4F2EA;
+  font-family: "Space Mono", monospace;
+  font-size: 9px;
+  font-weight: 700;
+
+  transition: all 250ms ease;
+}
+
+.tech-item:hover .css-icon {
+  color: #C7FF2E;
+  border-color: #C7FF2E;
+}
+
+
+/* =========================================
+   PROJECT SHOWCASE
+========================================= */
+
+.project-stack {
+  position: relative;
+  height: 310px;
+  isolation: isolate;
+}
+
+.project-layer {
+  position: absolute;
+  inset: 25px 25px;
+
+  overflow: hidden;
+  padding: 6px;
+
+  border: 1px solid #353530;
+  border-radius: 3px;
+
+  background: #111110;
+  opacity: 0;
+}
+
+.project-layer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* All projects share the same position */
+
+.project-one {
+  z-index: 3;
+  animation: slide-up-one 9s infinite;
+}
+
+.project-two {
+  z-index: 2;
+  animation: slide-up-two 9s infinite;
+}
+
+.project-three {
+  z-index: 1;
+  animation: slide-up-three 9s infinite;
+}
+
+
+/* =========================================
+   PROJECT SLIDE ANIMATIONS
+========================================= */
+
+@keyframes slide-up-one {
+  0% {
+    opacity: 0;
+    transform: translateY(35%);
+  }
+
+  7%, 27% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  34%, 100% {
+    opacity: 0;
+    transform: translateY(-35%);
+  }
+}
+
+@keyframes slide-up-two {
+  0%, 27% {
+    opacity: 0;
+    transform: translateY(35%);
+  }
+
+  34%, 60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  67%, 100% {
+    opacity: 0;
+    transform: translateY(-35%);
+  }
+}
+
+@keyframes slide-up-three {
+  0%, 60% {
+    opacity: 0;
+    transform: translateY(35%);
+  }
+
+  67%, 93% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-35%);
+  }
+}
+
+.project-one,
+.project-two,
+.project-three {
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================
+   PROJECT END MESSAGE
+========================================= */
+
+.project-end-message {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  opacity: 0;
+  animation: show-end-message 9s infinite;
+}
+
+.project-end-message p {
+  color: #F4F2EA;
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+}
+
+.project-end-message > span:first-child {
+  color: #C7FF2E;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}
+
+.project-message-line {
+  width: 35px;
+  height: 1px;
+  background: #C7FF2E;
+}
+
+@keyframes show-end-message {
+  0%, 94% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  97%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   REALISTIC NEON SHOWCASE LIGHT
+========================================= */
+
+.hero-showcase {
+  isolation: isolate;
+}
+
+.showcase-light {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 445px;
+
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Main lamp fixture */
+
+.showcase-light-panel {
+  position: absolute;
+  top: 35px;
+  left: 5%;
+  z-index: 50;
+
+  width: 90%;
+  height: 3px;
+
+  background: #C7FF2E;
+
+  opacity: 0;
+  animation: neon-switch-on 0.5s ease-out 0.7s forwards;
+
+  box-shadow:
+    0 0 5px rgba(199, 255, 46, 1),
+    0 0 14px rgba(199, 255, 46, 0.85),
+    0 0 35px rgba(199, 255, 46, 0.45);
+}
+
+/* Main expanding light beam */
+
+.showcase-light-beam {
+  position: absolute;
+  top: 39px;
+  left: 0;
+
+  width: 100%;
+  height: 390px;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(199, 255, 46, 0.20) 0%,
+    rgba(199, 255, 46, 0.13) 30%,
+    rgba(199, 255, 46, 0.06) 70%,
+    rgba(199, 255, 46, 0.01) 100%
+  );
+
+  clip-path: polygon(
+    5% 0%,
+    95% 0%,
+    100% 100%,
+    0% 100%
+  );
+
+  opacity: 0;
+  animation: neon-beam-on 1.5s ease-out 1s forwards;
+}
+
+/* Left and right conic light rays */
+
+.showcase-light::before,
+.showcase-light::after {
+  content: "";
+  position: absolute;
+  top: 39px;
+
+  width: 50%;
+  height: 230px;
+
+  pointer-events: none;
+  opacity: 0;
+
+  background: conic-gradient(
+    from 70deg at 100% 0%,
+    transparent 0deg,
+    rgba(199, 255, 46, 0.11) 25deg,
+    transparent 55deg
+  );
+
+  animation: neon-beam-on 1.5s ease-out 1s forwards;
+}
+
+.showcase-light::before {
+  left: 0;
+}
+
+.showcase-light::after {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+/* Central ambient light */
+
+.showcase-light-beam::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+
+  width: 80%;
+  height: 65%;
+
+  background: radial-gradient(
+    ellipse at top,
+    rgba(199, 255, 46, 0.14) 0%,
+    rgba(199, 255, 46, 0.05) 40%,
+    transparent 75%
+  );
+}
+
+
+/* =========================================
+   LIGHT ANIMATIONS
+========================================= */
+
+@keyframes neon-switch-on {
+  0%, 20% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  65%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes neon-beam-on {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 640px) {
+  .tech-marquee-group {
+    gap: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .tech-item {
+    font-size: 0.75rem;
+  }
+
+  .tech-item img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 639px) {
+  .project-stack {
+    height: 245px;
+  }
+
+ 
+
+  .showcase-light {
+    top: -40px;
+    height: 345px;
+  }
+
+  .showcase-light-beam {
+    height: 290px;
+  }
+
+  .showcase-light::before,
+  .showcase-light::after {
+    height: 180px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-marquee-track {
+    animation: none;
+  }
+
+  .project-layer {
+    animation: none;
+  }
+
+  .project-one {
+    opacity: 1;
+    transform: none;
+  }
+
+  .project-two,
+  .project-three {
+    opacity: 0;
+    transform: none;
+  }
+
+  .project-end-message {
+    animation: none;
+  }
+
+  .showcase-light-panel,
+  .showcase-light-beam,
+  .showcase-light::before,
+  .showcase-light::after {
+    animation: none;
+    opacity: 1;
+  }
+}

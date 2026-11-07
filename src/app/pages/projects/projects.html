@@ -1,0 +1,137 @@
+
+<section id="projects" class="projects-section border-t border-b border-line">
+
+  <!-- Section Header -->
+  <div class="projects-header">
+    <div class="projects-heading">
+      <span class="section-eyebrow">// SELECTED_WORK</span>
+      <h2>Things I've <span>built.</span></h2>
+    </div>
+
+    <p class="projects-intro">
+      A collection of applications I've developed, exploring
+      frontend architecture, problem-solving, and user-focused
+      digital experiences.
+      <br>
+      <br>
+       <a href="https://github.com/wello196?tab=repositories" class="project-live-link" target="_blank" rel="noopener noreferrer">
+          <span>View More Projects On Github</span>
+          <span class="action-arrow">↗</span>
+        </a>
+    </p>
+
+  </div>
+  
+
+
+ 
+
+
+
+
+@for(p of projects();track p.id){
+   <article class="project-card project-card-reverse">
+
+    <div class="project-topline">
+      <span class="project-index">{{p.index}}</span>
+
+      <span class="project-status">
+        <span class="status-dot"></span>
+        {{p.status}}
+      </span>
+    </div>
+
+
+    <!-- Project Screenshot -->
+    <div class="project-visual">
+      <div class="project-image-frame">
+        <img
+          [src]="p.screenshot"
+          [alt]="p.title"
+          
+        />
+      </div>
+
+      <span class="visual-index">{{p.index}}</span>
+    </div>
+
+
+    <!-- Project Information -->
+    <div class="project-content">
+
+      <div class="project-title-row">
+        <div>
+          <span class="project-category">
+            {{p.category}}
+          </span>
+
+          <h3>{{p.title}}</h3>
+        </div>
+
+        <span class="project-number">{{p.visualIndex}}</span>
+      </div>
+
+
+      <p class="project-description">
+        {{p.description}}
+      </p>
+
+
+      <!-- Key Features -->
+      <div class="project-highlights">
+        @for(h of p.highlights;track h.label){
+          <div class="highlight-item">
+          <span class="highlight-label">{{h.label}}</span>
+
+          <div>
+            <h4>{{h.title}}</h4>
+            <p>
+              {{h.description}}
+            </p>
+          </div>
+        </div>
+        }
+      </div>
+
+
+      <!-- Technologies -->
+      <div class="project-tech-wrapper">
+        <span class="project-meta-label">TECH STACK</span>
+
+        <div class="project-tech">
+          @for(s of p.techStack;track s){
+            <span>{{s}}</span>
+          }
+        </div>
+      </div>
+
+
+      <!-- Project Actions -->
+      <div class="project-actions">
+
+        <a [href]="p.liveDemoUrl" class="project-live-link" target="_blank" rel="noopener noreferrer">
+          <span>LIVE DEMO</span>
+          <span class="action-arrow">↗</span>
+        </a>
+
+        <a [href]="p.githubUrl" class="project-github-link" target="_blank" rel="noopener noreferrer">
+          <span>VIEW SOURCE ON GITHUB</span>
+          <span class="action-arrow">↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </article>
+}
+ 
+
+
+  <!-- Section Footer -->
+  <div class="projects-footer">
+    <span>END_OF_SELECTED_WORK</span>
+    <span>MORE PROJECTS COMING SOON_</span>
+  </div>
+
+</section>

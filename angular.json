@@ -29,9 +29,6 @@
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
-            "security": {
-              "allowedHosts": []
-            },
             "ssr": {
               "entry": "src/server.ts"
             }
@@ -62,6 +59,11 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "allowedHosts": [
+              "photographers-thoroughly-opportunities-prospect.trycloudflare.com"
+            ]
+          },
           "configurations": {
             "production": {
               "buildTarget": "myPortfolio:build:production"

@@ -1,0 +1,150 @@
+[
+  {
+    "number": "NO. 001",
+    "year": "2026",
+    "image": "/images/certificates/js-certificate.jpg",
+    "alt": "The Complete JavaScript Course certificate",
+    "badge": "Certificate",
+    "organization": "Udemy",
+    "title": "The Complete JavaScript Course",
+    "keyTakeaways": [
+      "Deep mastery of JavaScript execution contexts, the call stack, scoping chains, hoisting, and this keyword mechanics",
+      "Advanced asynchronous programming paradigms utilizing Promises, async/await syntax, and event loop architecture",
+      "Modern ES6+ architectural paradigms, closures, prototypical inheritance patterns, and functional programming concepts",
+      "DOM manipulation, event bubbling/capturing, modular code structuring, and building fully functional dynamic web apps from scratch"
+    ],
+    "tags": ["JavaScript", "ES6+", "Async", "DOM"]
+  },
+  {
+    "number": "NO. 002",
+    "year": "2026",
+    "image": "/images/certificates/angular-certificate.jpg",
+    "alt": "The Complete Guide to Angular certificate",
+    "badge": "Certificate",
+    "organization": "Udemy",
+    "title": "The Complete Guide to Angular (2+)",
+    "keyTakeaways": [
+      "Comprehensive architectural mastery of modern Angular using standalone components, strict typing, and modular design systems",
+      "Advanced dependency injection principles, hierarchical injectors, and service-driven communication patterns",
+      "Building complex reactive forms with advanced custom validators, dynamic controls, and robust state binding",
+      "Optimizing SPA performance via lazy loading routes, route guards, interceptors, and efficient change detection management"
+    ],
+    "tags": ["Angular", "TypeScript", "Forms", "Architecture"]
+  },
+  {
+    "number": "NO. 003",
+    "year": "2026",
+    "image": "/images/certificates/rxjs-certificate.jpg",
+    "alt": "RxJS and Observables certificate",
+    "badge": "Certificate",
+    "organization": "Udemy",
+    "title": "RxJS and Observables: Managing Asynchronous Data",
+    "keyTakeaways": [
+      "Comprehensive mastery of Reactive Programming paradigms using RxJS Observables, Subjects, and BehaviorsSubjects",
+      "Advanced flattening and transformation operators including switchMap, mergeMap, concatMap, and exhaustMap to handle race conditions",
+      "Stream error handling strategies, retry mechanisms, and memory leak prevention via proper subscription unsubscription and takeUntil patterns",
+      "Building complex data pipelines for real-time state synchronization, caching, and debounced user input streams"
+    ],
+    "tags": ["RxJS", "Reactive", "Observables", "Streams"]
+  },
+  {
+    "number": "NO. 004",
+    "year": "2026",
+    "image": "/images/certificates/Angular-intermediate.jpg",
+    "alt": "Scalable State Management & Architecture with Angular certificate",
+    "badge": "Certificate",
+    "organization": "Coursera (Board Infinity)",
+    "title": "Angular Intermediate: APIs, Testing & Scalable Architecture",
+    "keyTakeaways": [
+      "Designing scalable enterprise-grade component hierarchies and structured folder architectures for large codebases",
+      "Implementing advanced reactive state management utilizing Angular Signals and reactive design patterns",
+      "Integrating secure backend REST APIs through robust HttpClient wrappers, HTTP interceptors, and centralized error handling layers",
+      "Managing user sessions securely using JWT (JSON Web Tokens), implementing token refresh interceptors, and handling role-based access control (RBAC)",
+      "Rigorous unit testing workflows and component verification testing to ensure strict production code quality and reliability"
+    ],
+    "tags": ["Angular", "Signals", "JWT", "Testing"]
+  },
+  {
+    "number": "NO. 005",
+    "year": "2026",
+    "image": "/images/certificates/angular-advanced-ssr.jpg",
+    "alt": "Angular Advanced Enterprise Patterns SSR & Performance certificate",
+    "badge": "Certificate",
+    "organization": "Coursera (Board Infinity)",
+    "title": "Angular Advanced Enterprise Patterns: SSR & Performance",
+    "keyTakeaways": [
+      "Rendering web pages on the server side (SSR) so apps load faster and rank better on search engines",
+      "Improving overall website speed and core performance metrics like initial load time and responsiveness",
+      "Optimizing bundle sizes by splitting code into smaller chunks that load only when needed",
+      "Handling server-side and client-side application errors gracefully to prevent crashes and ensure fallback stability",
+      "Applying caching and advanced techniques to make large-scale web apps run smoothly under heavy traffic"
+    ],
+    "tags": ["SSR", "Performance", "Error Handling", "Optimization"]
+  },
+  {
+    "number": "NO. 006",
+    "year": "2026",
+    "image": "/images/certificates/git.jpg",
+    "alt": "Master Git and GitHub certificate",
+    "badge": "Certificate",
+    "organization": "Udemy",
+    "title": "Master Git and GitHub: From Zero to Hero",
+    "keyTakeaways": [
+      "Advanced Git version control mechanics including branching strategies, merging, rebasing, interactive rebase, and conflict resolution",
+      "Professional collaborative workflows utilizing pull requests, code reviews, fork-and-pull models, and semantic commit standards",
+      "Managing remote repositories, handling detached HEAD states, reflog recovery, and maintaining clean git histories",
+      "Automating deployment pipelines and version tagging workflows using GitHub integration tools"
+    ],
+    "tags": ["Git", "GitHub", "Version Control", "Workflow"]
+  },
+  {
+    "number": "NO. 007",
+    "year": "2026",
+    "image": "/images/certificates/aws-cloud-practioner.jpg",
+    "alt": "AWS Cloud Practitioner Essentials certificate",
+    "badge": "Certificate",
+    "organization": "Amazon Web Services",
+    "title": "AWS Cloud Practitioner Essentials",
+    "keyTakeaways": [
+      "Foundational cloud computing principles, including high availability, elasticity, fault tolerance, and economies of scale",
+      "Core AWS global infrastructure model covering Regions, Availability Zones, and Edge Locations",
+      "Deep dive into fundamental AWS services including computing (EC2, Lambda), storage (S3, EBS, EFS), and databases (RDS, DynamoDB)",
+      "Identity, Access Management (IAM), cloud security governance, compliance frameworks, and shared responsibility models",
+      "Cloud pricing structures, billing models, and cost management tooling for enterprise cloud environments"
+    ],
+    "tags": ["AWS", "Cloud", "IAM", "Security"]
+  },
+  {
+    "number": "NO. 008",
+    "year": "2026",
+    "image": "/images/certificates/awsCloudQuest.jpg",
+    "alt": "AWS Cloud Quest achievement certificate",
+    "badge": "Achievement",
+    "organization": "Amazon Web Services",
+    "title": "AWS Cloud Quest: Cloud Practitioner",
+    "keyTakeaways": [
+      "Hands-on architectural simulation applying cloud design concepts directly within interactive virtual environments",
+      "Practical deployment and networking configuration of virtual private clouds (VPCs), subnets, and internet gateways",
+      "Provisioning and managing EC2 compute instances, security groups, and automated object storage buckets with S3",
+      "Implementing IAM policies, user roles, and access permissions following enterprise security best practices"
+    ],
+    "tags": ["AWS", "Cloud Quest", "Architecture", "Hands-on"]
+  },
+  {
+    "number": "NO. 009",
+    "year": "2026",
+    "image": "/images/certificates/mckinsey.jpg",
+    "alt": "McKinsey Forward Program certificate",
+    "badge": "Certificate",
+    "organization": "McKinsey & Company",
+    "title": "McKinsey Forward Program",
+    "keyTakeaways": [
+      "Developing adaptive mindsets and personal resilience to navigate complex structural changes in fast-paced professional environments",
+      "Structured problem-solving frameworks for dissecting ambiguous challenges, defining core issues, and prioritizing tasks methodically",
+      "Communicating for impact by tailoring messages, structuring narratives, and driving cross-functional stakeholders toward decisive action",
+      "Building robust professional relationships, emotional intelligence, collaborative teamwork, and proactive career wellbeing management",
+      "Digital and AI essentials establishing a forward-thinking grasp of automation trends, emerging technologies, and data-driven mindsets"
+    ],
+    "tags": ["Leadership", "Strategy", "Problem Solving", "Agility"]
+  }
+]

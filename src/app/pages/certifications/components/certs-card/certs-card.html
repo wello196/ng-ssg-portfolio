@@ -1,0 +1,63 @@
+
+<div class="grid grid-cols-1 gap-3 sm:gap-5 lg:grid-cols-3">
+@for(c of certsData();track c.number){
+    <article class="group relative flex min-w-0 flex-col border border-line bg-[#10100F]">
+
+        <!-- Number + year -->
+        <div class="flex items-center justify-between border-b border-line px-3 py-3 sm:px-4">
+          <span class="font-mono text-[10px] text-neon">{{c.number}}</span>
+          <span class="font-mono text-[9px] text-dim">{{c.year}}</span>
+        </div>
+
+        <!-- Certificate image -->
+        <div class="relative bg-[#1A1A17] p-2 sm:p-3">
+          <img
+            [src]="c.image"
+            [alt]="c.alt"
+            class="block aspect-[1.35/1] w-full object-cover"
+            loading="lazy"
+          />
+
+          <span class="absolute bottom-4 right-4 bg-void/90 px-2 py-1 font-mono text-[9px] uppercase tracking-wider text-neon">
+            {{c.badge}}
+          </span>
+        </div>
+
+        <!-- Information -->
+        <div class="flex flex-1 flex-col p-3 sm:p-4">
+
+          <p class="mb-2 font-mono text-[9px] uppercase tracking-wider text-neon">
+            {{c.organization}}
+          </p>
+
+          <h3 class="min-h-14 text-sm leading-5 text-paper sm:text-base sm:leading-6">
+            {{c.title}}
+          </h3>
+
+          <div class="my-4 h-px w-8 bg-neon/60"></div>
+
+          <p class="mb-3 font-mono text-[9px] uppercase tracking-widest text-dim">
+            Key takeaways
+          </p>
+
+          <ul class="flex-1 space-y-3 text-[11px] leading-5 text-dim sm:text-xs">
+            @for(k of c.keyTakeaways;track k){
+              <li class="flex items-start gap-2">
+                <span class="mt-1 text-neon">↗</span>
+                {{k}}
+              </li>
+            }
+          </ul>
+
+          <div class="mt-5 border-t border-line pt-3">
+            <div class="flex flex-wrap gap-1.5">
+                @for(t of c.tags;track t){
+                  <span class="bg-white/5 px-2 py-1 font-mono text-[9px] text-dim">{{t}}</span>
+                }
+             
+            </div>
+          </div>
+        </div>
+      </article>
+}
+</div>

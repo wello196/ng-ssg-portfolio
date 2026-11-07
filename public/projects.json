@@ -1,0 +1,122 @@
+[
+  {
+    "id": "project-01",
+    "index": "01 / FEATURED PROJECT",
+    "status": "WEB APPLICATION",
+    "visualIndex": "PROJECT_001",
+    "category": "INCIDENT MANAGEMENT PLATFORM",
+    "title": "Incident Tracking System",
+    "description": "A centralized incident management application designed to simplify how teams report, assign, monitor, and resolve incidents. Engineered with zero-trust RBAC route guards, Angular Signals, and robust lifecycle tracking.",
+    "screenshot": "/images/projects/incident-tracking.png",
+    "highlights": [
+      {
+        "label": "01",
+        "title": "Role-Based Access",
+        "description": "Multi-tiered functional route guards (`authGuard`, `rolesGuard`) enforcing permissions for administrators, users, and support staff."
+      },
+      {
+        "label": "02",
+        "title": "Incident Lifecycle",
+        "description": "Create, assign, track, and update incidents through clearly defined statuses and dynamic resolution date tracking."
+      },
+      {
+        "label": "03",
+        "title": "Reusable Architecture",
+        "description": "Strict smart/presentational component separation and encapsulated HTTP service layers ensuring high maintainability."
+      }
+    ],
+    "techStack": ["Angular 22", "TypeScript", "RxJS", "Tailwind CSS v4", "REST API", "Vitest"],
+    "liveDemoUrl": "https://ng-incident-tracker.vercel.app/login",
+    "githubUrl": "https://github.com/wello196/ng-incident-tracker"
+  },
+  {
+    "id": "project-03",
+    "index": "02 / FEATURED PROJECT",
+    "status": "SSG WEB APPLICATION",
+    "visualIndex": "PROJECT_002",
+    "category": "CORPORATE PLATFORM & SEO",
+    "title": "Environmental Services Landing Page",
+    "description": "A high-performance, enterprise-grade Static Site Generated (SSG) landing page built with Angular 22, achieving optimal PageSpeed performance and search visibility.",
+    "screenshot": "/images/projects/masreyaEnvironment.png",
+    "highlights": [
+      {
+        "label": "01",
+        "title": "Static Pre-rendering (SSG)",
+        "description": "Pre-compiles paths via `app.routes.server.ts` (`RenderMode.Prerender`) for efficient static delivery and zero-flicker hydration."
+      },
+      {
+        "label": "02",
+        "title": "Optimal Core Web Vitals",
+        "description": "Achieves top-tier 100/100 scores across Performance, SEO, and Best Practices with sub-second FCP (0.9s) and LCP (1.1s)."
+      },
+      {
+        "label": "03",
+        "title": "RTL-First Corporate Layout",
+        "description": "Structured specifically for Right-to-Left language directionality with responsive off-canvas navigation and secure inquiry forms."
+      }
+    ],
+    "techStack": ["Angular 22", "Angular SSG", "TypeScript", "Tailwind CSS", "REST API"],
+    "liveDemoUrl": "https://masreyaenvironment.com",
+    "githubUrl": "https://github.com/wello196/ng-environmental-service-landing-page"
+  },
+  {
+    "id": "project-02",
+    "index": "03 / FEATURED PROJECT",
+    "status": "WEB APPLICATION",
+    "visualIndex": "PROJECT_003",
+    "category": "INNOVATION & COMPETITION MANAGEMENT",
+    "title": "Project Competition Platform",
+    "description": "An enterprise-grade innovation challenge platform providing full lifecycle management for participant registrations, project submissions, dynamic CRUD administration, and real-time dashboard analytics.",
+    "screenshot": "/images/projects/projectCompetition.png",
+    "highlights": [
+      {
+        "label": "01",
+        "title": "Layered Clean Architecture",
+        "description": "Strict decoupling across core singletons, shared presentation components, and isolated feature route modules."
+      },
+      {
+        "label": "02",
+        "title": "Advanced Reactive Validations",
+        "description": "Custom cross-field validators including date range comparisons (`CompareDateValidator`), password matching, and numeric input restrictions."
+      },
+      {
+        "label": "03",
+        "title": "Deferred UI Loading",
+        "description": "Optimized runtime performance utilizing native Angular `@defer` blocks with fallback skeletons and component input binding."
+      }
+    ],
+    "techStack": ["Angular 22", "TypeScript", "RxJS", "Reactive Forms", "REST API", "Vitest"],
+    "liveDemoUrl": "https://ng-project-competition-three.vercel.app/home",
+    "githubUrl": "https://github.com/wello196/ng-project-competition"
+  },
+  {
+    "id": "project-04",
+    "index": "04 / FEATURED PROJECT",
+    "status": "PROGRESSIVE WEB APP",
+    "visualIndex": "PROJECT_004",
+    "category": "OFFLINE-FIRST NEWS PLATFORM",
+    "title": "PWA News Reader Application",
+    "description": "A modern, high-performance Progressive Web Application delivering native app-like news reading experiences with offline-first capabilities and fine-grained reactive signals.",
+    "screenshot": "/images/projects/news-pwa.png",
+    "highlights": [
+      {
+        "label": "01",
+        "title": "Offline-First PWA Architecture",
+        "description": "Configured Angular Service Worker (`ngsw-config.json`) managing static asset prefetching and data endpoint freshness caching strategies."
+      },
+      {
+        "label": "02",
+        "title": "Fine-Grained Signals & OnPush",
+        "description": "Optimized change detection combined with read-only signal projections for minimal render overhead across all components."
+      },
+      {
+        "label": "03",
+        "title": "Custom Reactive Pipes",
+        "description": "Instantaneous multi-level client-side filtering via pure transformation pipes (`CategoryPipe` and `SearchFilterPipe`)."
+      }
+    ],
+    "techStack": ["Angular 22", "Angular PWA", "Service Workers", "TypeScript", "RxJS", "Vitest"],
+    "liveDemoUrl": "https://ng-news-pwa.vercel.app/newsFeed",
+    "githubUrl": "https://github.com/wello196/ng-news-pwa"
+  }
+]

@@ -1,0 +1,173 @@
+
+<header class="sticky top-0 z-50 w-full border-b border-white/8 bg-void/75 shadow-[0_4px_30px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+
+  <!-- Glossy top highlight -->
+  <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/20 to-transparent"></div>
+
+  <nav class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-6 md:h-20 md:px-10">
+
+    <!-- Logo -->
+    <a routerLink="projects" fragment="hero" class="group flex items-center gap-1 font-mono text-lg font-bold tracking-tight">
+      <span class="text-paper transition-colors group-hover:text-neon">WM</span>
+      <span class="text-neon">.</span>
+      <span class="text-dim transition-colors group-hover:text-paper">DEV</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+   <div class="hidden items-center gap-6 lg:gap-8 md:flex">
+
+  <a
+    routerLink="projects"
+    fragment="about"
+
+    
+
+    class="font-mono text-xs tracking-wide text-dim transition-colors hover:text-neon">
+    ABOUT
+  </a>
+
+  <a
+    routerLink="projects"
+    fragment="projects"
+    routerLinkActive="text-neon"
+
+    class="font-mono text-xs tracking-wide text-dim transition-colors hover:text-neon">
+    PROJECTS
+  </a>
+
+  <a
+    routerLink="tech-stack"
+    fragment="skills"
+    routerLinkActive="text-neon"
+   
+    class="font-mono text-xs tracking-wide text-dim transition-colors hover:text-neon">
+    STACK
+  </a>
+
+  <a
+    routerLink="experience"
+    fragment="experience"
+    routerLinkActive="text-neon"
+    
+    class="font-mono text-xs tracking-wide text-dim transition-colors hover:text-neon">
+    EXPERIENCE
+  </a>
+
+  <a
+    routerLink="certifications"
+    fragment="certifications"
+    routerLinkActive="text-neon"
+    
+    class="font-mono text-xs tracking-wide text-dim transition-colors hover:text-neon">
+    CERTS
+  </a>
+
+  <a
+    routerLink="projects"
+    fragment="contact"
+    routerLinkActive="text-neon"
+    
+   
+    
+    class="group flex items-center gap-2 border border-neon/40 px-4 py-2.5 font-mono text-xs text-neon transition-all hover:bg-neon hover:text-void">
+    CONTACT
+    <span class="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">↗</span>
+  </a>
+
+</div>
+
+    <!-- Mobile Menu Toggle -->
+    <button
+      (click)="isOpen.set(!isOpen())"
+      type="button"
+      [attr.aria-expanded]="isOpen()"
+      aria-controls="mobile-menu"
+      [attr.aria-label]="isOpen() ? 'Close navigation menu' : 'Open navigation menu'"
+      [class.border-neon/60]="isOpen()"
+      [class.bg-neon/10]="isOpen()"
+      [class.text-neon]="isOpen()"
+      class="relative z-60 flex h-10 w-10 touch-manipulation items-center justify-center border border-white/10 text-paper transition-all duration-300 hover:border-neon/50 hover:text-neon active:scale-95 md:hidden">
+
+      @if (isOpen()) {
+        <!-- Close Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round"
+          class="pointer-events-none">
+          <path d="M18 6 6 18M6 6l12 12"/>
+        </svg>
+      } @else {
+        <!-- Hamburger Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round"
+          class="pointer-events-none">
+          <path d="M4 8h16M4 16h16"/>
+        </svg>
+      }
+    </button>
+
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div
+    id="mobile-menu"
+    [class.opacity-100]="isOpen()"
+    [class.visible]="isOpen()"
+    [class.translate-y-0]="isOpen()"
+    [class.pointer-events-auto]="isOpen()"
+    [class.opacity-0]="!isOpen()"
+    [class.invisible]="!isOpen()"
+    [class.-translate-y-2]="!isOpen()"
+    [class.pointer-events-none]="!isOpen()"
+    class="absolute left-0 right-0 top-full border-b border-white/15 bg-void/98 px-6 py-8 font-mono shadow-[0_30px_60px_rgba(0,0,0,0.9)] backdrop-blur-2xl transition-all duration-300 ease-out md:hidden">
+
+    <!-- Drawer Highlight -->
+    <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent"></div>
+
+    <div class="flex flex-col gap-6">
+
+      <a routerLink="projects" fragment="about"  (click)="isOpen.set(false)" class="group flex items-center gap-3 text-sm tracking-wide text-dim transition-all duration-200 hover:translate-x-1 hover:text-neon">
+        <span class="text-xs text-neon/50">01 /</span>
+        ABOUT
+      </a>
+
+      <a routerLink="projects" fragment="projects" (click)="isOpen.set(false)" class="group flex items-center gap-3 text-sm tracking-wide text-dim transition-all duration-200 hover:translate-x-1 hover:text-neon">
+        <span class="text-xs text-neon/50">02 /</span>
+        PROJECTS
+      </a>
+
+      
+
+      <a routerLink="tech-stack" fragment="skills" (click)="isOpen.set(false)" class="group flex items-center gap-3 text-sm tracking-wide text-dim transition-all duration-200 hover:translate-x-1 hover:text-neon">
+        <span class="text-xs text-neon/50">03 /</span>
+        STACK
+      </a>
+
+      <a routerLink="experience" fragment="experience" (click)="isOpen.set(false)" class="group flex items-center gap-3 text-sm tracking-wide text-dim transition-all duration-200 hover:translate-x-1 hover:text-neon">
+        <span class="text-xs text-neon/50">04 /</span>
+        EXPERIENCE
+      </a>
+
+      <a routerLink="certifications" fragment="certifications" (click)="isOpen.set(false)" class="group flex items-center gap-3 text-sm tracking-wide text-dim transition-all duration-200 hover:translate-x-1 hover:text-neon">
+        <span class="text-xs text-neon/50">05 /</span>
+        CERTS
+      </a>
+
+      <div class="my-1 h-px bg-white/10"></div>
+
+      <a routerLink="projects" fragment="contact" (click)="isOpen.set(false)"
+        class="group flex items-center justify-between border border-neon/40 bg-neon/4 px-4 py-3.5 text-xs tracking-widest text-neon transition-all duration-300 hover:bg-neon hover:text-void">
+        CONTACT
+        <span class="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+      </a>
+
+      <div class="flex items-center gap-2 pt-1 font-mono text-[10px] tracking-wider text-dim">
+        <span class="h-1.5 w-1.5 rounded-full bg-neon shadow-[0_0_8px_rgba(199,255,46,0.7)]"></span>
+        AVAILABLE FOR OPPORTUNITIES
+      </div>
+
+    </div>
+  </div>
+
+</header>

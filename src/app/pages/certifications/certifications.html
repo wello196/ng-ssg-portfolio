@@ -1,0 +1,73 @@
+<section
+  id="certifications"
+  class="relative border-t border-b border-line bg-void px-6 py-24 text-paper sm:px-10 lg:px-20"
+>
+
+  <div class="mx-auto max-w-375">
+
+    <!-- HEADER -->
+    <div class="mb-14 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+      <div>
+        <p class="mb-5 font-mono text-xs uppercase tracking-[0.2em] text-neon">
+          // Knowledge & achievements
+        </p>
+
+        <h2 class="font-mono text-[clamp(2.8rem,7vw,6rem)] leading-none tracking-[-0.08em]">
+          Credentials<span class="text-neon">.</span>
+        </h2>
+
+        <p class="mt-6 max-w-xl font-mono text-sm leading-7 text-dim">
+          A record of continuous learning, technical exploration,
+          and knowledge gained along the way.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-5 border-t border-line pt-5 lg:border-t-0 lg:pt-0">
+        <div>
+          <p class="font-mono text-3xl text-neon">{{certsData().length}}</p>
+          <p class="mt-1 font-mono text-[9px] uppercase tracking-widest text-dim">
+            Certifications
+          </p>
+        </div>
+
+        <div class="h-10 w-px bg-line"></div>
+
+        <div>
+          <p class="font-mono text-3xl">04</p>
+          <p class="mt-1 font-mono text-[9px] uppercase tracking-widest text-dim">
+            Learning areas
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLLECTION LABEL -->
+    <div class="mb-6 flex items-center justify-between border-y border-line py-4">
+      <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-dim">
+        Selected credentials
+      </span>
+
+      <span class="font-mono text-[10px] text-neon">
+        COLLECTION / 01—0{{certsData().length}}
+      </span>
+    </div>
+
+   
+      <app-certs-card [certsData]="certsData()"></app-certs-card>
+       
+
+   
+
+    <!-- FOOTER -->
+    <div class="mt-8 flex items-center justify-between border-t border-line pt-5">
+      <p class="font-mono text-[10px] uppercase tracking-widest text-dim">
+        More knowledge. Better engineering.
+      </p>
+
+      <span class="font-mono text-xs text-neon">END_ / OF_ / COLLECTION</span>
+    </div>
+
+  </div>
+</section>
+
+
